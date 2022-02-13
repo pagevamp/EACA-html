@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.scss"],"names":[],"mappings":"AAGK,qCAEO,eAAQ,CAFf,4BAKO,wBAAS","file":"../home.min.css","sourcesContent":["@import '../common-imports';\r\n\r\n.template {\r\n    &-home {\r\n        .student-of-the-month{\r\n            padding:12rem 0;\r\n        }\r\n        .testimonial{\r\n            padding: 8rem 0 !important;\r\n        }\r\n    }\r\n}\r\n"]}

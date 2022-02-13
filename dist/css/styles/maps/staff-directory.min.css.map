@@ -1,0 +1,1 @@
+{"version":3,"sources":["staff-directory.scss"],"names":[],"mappings":"AACK,sCAEO,wBAAS,CACT,gBAAW","file":"../staff-directory.min.css","sourcesContent":[".template {\r\n    &-staffDirectory {\r\n        .testimonial{\r\n            padding: 8rem 0 !important;\r\n            margin-top:16rem;\r\n        }\r\n    }\r\n}"]}

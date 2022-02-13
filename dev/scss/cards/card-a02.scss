@@ -1,0 +1,67 @@
+@import "../common-imports";
+.card-a02 {
+    &__icon{
+            li {
+                display: flex;
+                color: $navy-gray;
+                font-size: 1.6rem;
+                align-items: center;
+                .icon {
+                    margin-right: 2rem;
+                    i {
+                        border: 1px solid $bright-blue;
+                        height: 3.2rem;
+                        width: 3.2rem;
+                        color: $bright-blue;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        font-size: 2.2rem;
+                    }
+                    &::before{
+                        display: none;
+                    }
+                }
+                a{
+                    color: $navy-gray;
+                }
+                
+            }
+    }
+    &__number{
+            list-style-type: none;
+            counter-reset: css-counter 0;
+            li {
+                display: flex;
+                color: $navy-gray;
+                font-size: 1.6rem;
+                gap: 2.2rem;
+                // display: -webkit-inline-box;
+                // word-break: break-word;
+                &:before{
+                    counter-increment: css-counter 1;
+                    color: $bright-blue;
+                    border: 1px solid $bright-blue;
+                    height: 3.2rem;
+                    width:3.2rem;
+                    border-radius: 50%;
+                    content: counter(css-counter);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-basis: 3.2rem;
+                    flex-grow: 0;
+	                flex-shrink: 0;
+                }
+                &:last-child{
+                    margin-bottom: 0px!important;
+                }
+                a{
+                    color: $navy-gray;
+                }
+            }
+        }
+    
+}
+ 

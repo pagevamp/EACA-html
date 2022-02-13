@@ -1,0 +1,27 @@
+@import "../common-imports";
+.card-a01{
+    max-width: 81.5rem;
+   .h3{
+       color: $primary;
+       font-weight: 300;
+       position: relative;
+    //    &::before{
+    //     position: absolute;
+    //     content:'“';
+    //     left:-1rem;
+    //    }
+    //    &::after{
+    //     position: absolute;
+    //     content:'”';
+    //    }
+   } 
+   p{
+       font-weight: 500;
+       &:last-of-type{
+            color: $blue-gray;
+        }
+   }
+   .eyebrow-2{
+       line-height:2.4rem;
+   }
+}

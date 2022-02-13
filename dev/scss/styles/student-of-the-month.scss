@@ -1,0 +1,49 @@
+@import "../common-imports";
+
+.student-of-the-month{
+    &__row{
+        @include media-breakpoint-up(lg) {  
+            columns: 2;
+            column-gap: 2.4rem;
+        }
+        @include media-breakpoint-up(xl) {  
+            columns: 3;
+            column-gap: 7.2rem;
+        }
+    }
+    &__col{
+        width: 100%;
+        margin: 0 0 2rem;
+        padding: 1rem;
+        overflow: hidden;
+        break-inside: avoid;
+        &:nth-child(4n-1){
+            @include media-breakpoint-up(lg) {
+                padding-top: 8rem;
+            }
+        }
+    }
+    .carousel{
+        &-control-prev,
+        &-control-next{
+            position: unset;
+            display: inline-block;
+            width: unset;
+            margin-right: 2.4rem;
+            .icon-left,
+            .icon-right{
+                color: $bright-blue;
+                border: 1px solid $bright-blue;
+                border-radius: 50%;
+                height: 8rem;
+                width: 8rem;
+                font-size: 3.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

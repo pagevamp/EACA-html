@@ -1,0 +1,25 @@
+@import "./../common-imports";
+
+.callout-2 {
+    background: linear-gradient(180deg, #f4f8ff 0%, rgba(244, 248, 255, 0) 81.7%);
+    &.alternate-bg {
+        background: none;
+    }
+    header {
+        .h2 {
+            max-width: 74.2rem;
+        }
+    }
+    &__para {
+        p {
+            color: $blue-gray;
+            @include media-breakpoint-up(lg) {
+                column-count: 2;
+                column-gap: 2.4rem;
+            }
+            @include media-breakpoint-up(xl) {
+                column-count: unset;
+            }
+        }
+    }
+}

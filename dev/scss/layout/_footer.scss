@@ -1,0 +1,22 @@
+.#{$global} {
+    &-footer {
+        padding: 4rem 0;
+        @include media-breakpoint-up(lg) {
+            padding: 8rem 0;
+        }
+        ul {
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        background-color: $light-blue;
+        .contact-address {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $gray-100;
+        }
+    }
+}

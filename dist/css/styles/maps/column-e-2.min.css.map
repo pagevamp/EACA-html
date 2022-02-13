@@ -1,0 +1,1 @@
+{"version":3,"sources":["column-e-2.scss"],"names":[],"mappings":"AAEA,uBAGY,iBAAW","file":"../column-e-2.min.css","sourcesContent":["@import './../common-imports';\r\n\r\n.column-e-2{\r\n    header{\r\n        .h3{\r\n            max-width: 40.6rem;\r\n        }\r\n    }\r\n}"]}

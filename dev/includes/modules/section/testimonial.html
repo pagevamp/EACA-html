@@ -1,0 +1,32 @@
+<section class="testimonial position-relative bg-white-blue py-20 py-lg-40">
+    <div class="sidebar @@sidebarShowHide">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 @@offset">
+                <div class="testimonial__body">
+                    @@include('../cards/card-a01.html',{
+                        'testimonial':'"At augue eget arcu dictum. Nunc vel risus commodo viverra maecenas accumsan lacus. Semper quis lectus nulla at volutpat diam ut."',
+                        'name':'JULIE WENTWORTH',
+                        'faculty':'SOCIAL STUDIES FACULTY',
+                        'showHideName':'@@showHideName'
+                    })
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="testimonial__list @@showHideList mt-16 mt-xl-0">
+                    @@include('../cards/card-a02.html',{
+                        'showHideIcon':'',
+                        'showHideNumber':'d-none'
+                    })
+                </div>
+                <div class="testimonial__signup @@showHideSignup mt-16 mt-xl-0">
+                    @@include('../cards/card-a03.html',{
+                        'para':'Sign up for the Homecoming dance',
+                        'btnText':'Register'
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

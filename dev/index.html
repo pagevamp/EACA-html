@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'EHS - Home page'})
+    </head>
+    <body class="template-home">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin': ''
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content bg-white-blue h-100">
+                        @@include('includes/offcanvas.html')
+                    </div>
+                </div>
+                <main class="theme-main">
+                    @@include('./includes/modules/section/student-of-the-month.html')
+                    @@include('./includes/modules/section/testimonial.html',{
+                        'offset':'offset-xl-1',
+                        'showHideList':'d-none',
+                        'showHideSignup':'d-none'
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

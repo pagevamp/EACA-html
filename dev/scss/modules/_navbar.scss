@@ -1,0 +1,95 @@
+@import "../common-imports";
+.nav {
+    &-main {
+        .dropdown-toggle{
+            &::after{
+                display: none;
+            }
+        }
+        .dropdown-menu{
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            width: 30.6rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition-duration: 0.5s;
+            li{
+                border-bottom: 1px solid $light-gray;
+                &:last-child{
+                    border: none;
+                }
+                .dropdown-item{
+                    color: $blue-gray;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    padding: 0 3rem;
+                    white-space: normal;
+                    &:hover{
+                        background-color: transparent;
+                        color: $super-blue-1;
+                    }
+                }
+            }
+        }
+
+        .dropdown-item {
+            text-decoration: none;
+            padding: 0;
+            &:hover {
+                background-color: transparent;
+            }
+            
+        }
+
+        .dropdown-is-on {
+            .nav-link {
+                span {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &-link{
+        &:hover{
+            color: $super-blue-1;
+        }
+    }
+
+}
+
+// For Hover on Desktop
+@include media-breakpoint-up(xl) {
+    .nav-main .nav-item:hover > .dropdown-menu {
+        transition: all 0.1s ease 300ms;
+    }
+
+    .theme-header {
+        transition: none;
+    }
+
+    .nav-item > .dropdown-menu,
+    .nav-item:hover > .dropdown-menu .dropdown .dropdown-menu {
+        display: block;
+    }
+
+    .nav-item:hover > .dropdown-menu .dropdown .dropdown-menu {
+        left: 100%;
+        top: 0;
+    }
+
+    .nav-item:hover > .dropdown-menu {
+        // transform: scaleY(1);
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    .nav-item:hover > .dropdown-menu .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+}  

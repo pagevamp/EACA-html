@@ -1,0 +1,1 @@
+{"version":3,"sources":["upimage.scss"],"names":[],"mappings":"AAAA,oBAGY,kBAAe,CACf,kBAAY,CACZ,mBAAY,CAAZ,gBAAY","file":"../upimage.min.css","sourcesContent":[".upimage{\r\n    figure{\r\n        img{\r\n            border-radius: 2rem;\r\n            max-height: 53.6rem;\r\n            object-fit: cover;\r\n        }\r\n    }\r\n}\r\n"]}

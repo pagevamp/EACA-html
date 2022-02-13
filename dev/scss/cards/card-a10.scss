@@ -1,0 +1,19 @@
+.card-a10{
+    figure{
+        img{
+            object-fit: contain;
+            border-radius: 3rem;
+        }
+    }
+    .h4{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+        color:$primary;
+    }
+    p{ 
+        color: $blue-gray;
+        font-weight: 300;
+    }
+}
+ 

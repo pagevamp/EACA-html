@@ -1,0 +1,117 @@
+// @font-face {
+//     font-family: 'FoundersGrotesk';
+//     src: url('#{$font-path}/FoundersGroteskLight.woff2') format('woff2');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-black-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-bold-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-extrabold-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-italic-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-light-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-medium-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-regular-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-semibold-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('#{$font-path}/poppins-thin-webfont.woff2') format('woff2'),
+         url('#{$font-path}/poppins-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+     font-family: "ARS Maquette";
+     src: url("#{$font-path}/ARSMaquette-Regular.woff2") format("woff2"),
+         url("#{$font-path}/ARSMaquette-Regular.woff") format("woff");
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "ARS Maquette";
+     src: url("#{$font-path}/ARSMaquette-Medium.woff2") format("woff2"),
+         url("#{$font-path}/ARSMaquette-Medium.woff") format("woff");
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "ARS Maquette";
+     src: url("#{$font-path}/ARSMaquette-Bold.woff2") format("woff2"),
+         url("#{$font-path}/ARSMaquette-Bold.woff") format("woff");
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
