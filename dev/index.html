@@ -16,7 +16,14 @@
                     </div>
                 </div>
                 <main class="theme-main">
+                    @@include('./includes/modules/section/callout-1.html')
                     @@include('./includes/modules/section/student-of-the-month.html')
+                    @@include('./includes/modules/section/donatenow.html',{
+                        'title':'Want to give back to EHS? Start here',
+                        'subTitle':'Make your donation today!',
+                        'btnText':'Donate now'
+                    })
+                    @@include('./includes/modules/section/newsletter-module.html')
                     @@include('./includes/modules/section/testimonial.html',{
                         'offset':'offset-xl-1',
                         'showHideList':'d-none',
