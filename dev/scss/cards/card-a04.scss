@@ -1,0 +1,17 @@
+.card-a04{
+    border-top: 1px solid $gray;
+    &__name{
+        font-family: "Poppins";
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    &__class{
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+    &__amount{
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        letter-spacing: 1.5px;
+    }
+}
