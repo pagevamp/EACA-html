@@ -1,0 +1,15 @@
+.form-control{
+    height: 6.2rem;
+    border-radius: 0.8rem;
+    border-color: $gray;
+    font-size: 1.6rem;
+    color: $black;
+    padding: 1.6rem;
+    &::placeholder{
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        font-weight: 400;
+        font-family: "Poppins";
+        color: $gray;
+    }
+}
