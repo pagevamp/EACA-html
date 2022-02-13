@@ -26,6 +26,16 @@
         }
     }
 
+    &-with-border{
+        border-color: $white;
+        color: $white;
+        &:hover{
+            border-color: $white;
+            background-color: $white;
+            color: $bright-blue;
+        }
+    }
+
     &-with-arrow {
         background-color: $white;
         height: 8rem;

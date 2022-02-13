@@ -89,6 +89,31 @@
 }
 
 @font-face {
+    font-family: 'Lora';
+    src: url('#{$font-path}/Lora-Regular.woff') format('woff'),
+         url('#{$font-path}/Lora-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('#{$font-path}/Lora-Medium.woff') format('woff'),
+         url('#{$font-path}/Lora-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('#{$font-path}/Lora-Bold.woff') format('woff'),
+         url('#{$font-path}/Lora-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
      font-family: "ARS Maquette";
      src: url("#{$font-path}/ARSMaquette-Regular.woff2") format("woff2"),
          url("#{$font-path}/ARSMaquette-Regular.woff") format("woff");

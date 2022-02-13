@@ -1,22 +1,66 @@
 .#{$global} {
     &-footer {
-        padding: 4rem 0;
-        @include media-breakpoint-up(lg) {
-            padding: 8rem 0;
-        }
-        ul {
-            li {
-                a {
-                    font-weight: 400;
-                    font-size: 1.4rem;
+        .footer-nav{
+            ul{
+                li{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        height: 1.5rem;
+                        width: 0.2rem;
+                        background-color: #fff;
+                        right: -7px;
+                        top: 6px;
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
                 }
             }
         }
-        background-color: $light-blue;
-        .contact-address {
-            font-size: 1.4rem;
-            line-height: 2.4rem;
-            color: $gray-100;
+
+        .social{
+            li{
+                height: 4rem;
+                width: 4rem;
+                background-color: $white;
+                border-radius: 50%;
+                position: relative;
+                margin-right: 0.8rem;
+                i{
+                    font-size: 2.4rem;
+                    position: absolute;
+                    top: 50%;  
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        .newsletter-input{
+            width: 27rem;
+            margin-right: 3.2rem;
+            .form-control{
+                height: 4.4rem;
+                border-radius: 3.6rem;
+                border-color: $white;
+                color: $white;
+                font-size: 1.6rem;
+                padding-left: 3rem;
+                padding-right: 1rem;
+                background-color: transparent;
+                &::placeholder{
+                    font-weight: 400;
+                    font-family: "ARS Maquette";
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: $white;
+                }
+            }
         }
     }
 }
+ 
