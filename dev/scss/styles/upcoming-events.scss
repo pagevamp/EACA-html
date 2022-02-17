@@ -1,0 +1,36 @@
+.upcoming-events{
+    &__title{
+        .h3{
+            writing-mode: vertical-rl;
+            transform: rotate(-360deg);
+            letter-spacing: 0.4rem;
+            display: none;
+            @include media-breakpoint-up(xl) {        
+                display: block;
+            }
+        }
+    }
+    &__img{
+        border-radius: 2rem;
+        overflow: hidden;
+        &::after{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            content: '';
+            background: linear-gradient(0deg, #62737D 1.85%, rgba(98, 115, 125, 0) 94.71%);
+            width: 100%;
+            height: 100%;
+        }
+        &--text{
+            bottom: 4rem;
+            left: 3.2rem;
+            z-index: 2;
+            max-width: 23.5rem;
+        }
+
+        figure{
+            height: 50rem;
+        }
+    }
+}
