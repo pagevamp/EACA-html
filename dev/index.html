@@ -6,9 +6,9 @@
     <body class="template-home">
         <div class="theme-app d-flex flex-column">
             <div class="theme-wrap position-relative">
-                @@include('includes/header.html', {
+                <!-- @@include('includes/header.html', {
                     'headerSkin': ''
-                })
+                }) -->
                 <!-- Pushy Menu -->
                 <div class="pushy pushy--left" data-focus="#first-link">
                     <div class="pushy-content bg-white-blue h-100">
@@ -16,6 +16,7 @@
                     </div>
                 </div>
                 <main class="theme-main">
+                    @@include('./includes/modules/above-the-fold/leadspace-home.html')
                     @@include('./includes/modules/section/callout-1.html')
                     @@include('./includes/modules/section/student-of-the-month.html')
                     @@include('./includes/modules/section/donatenow.html',{
@@ -23,6 +24,8 @@
                         'subTitle':'Make your donation today!',
                         'btnText':'Donate now'
                     })
+                    @@include('./includes/modules/section/about-being-member.html')
+                    @@include('./includes/modules/section/upcoming-events.html')
                     @@include('./includes/modules/section/newsletter-module.html')
                     @@include('./includes/modules/section/testimonial.html',{
                         'offset':'offset-xl-1',

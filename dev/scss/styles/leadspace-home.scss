@@ -1,0 +1,42 @@
+@import "../common-imports";
+@import "../global/path";
+
+.leadspace-home{
+    &.feature-callout{
+        height: 68rem;
+        @include media-breakpoint-up(md) {        
+            height: 60rem;
+        }
+        @include media-breakpoint-up(lg) {        
+            height: 80rem;
+        }
+    }
+    figure{
+        img{
+            object-fit: cover;
+        }
+    }
+    header{
+        .h2{
+            letter-spacing: -2px;
+        } 
+        p{
+            font-size:1.4rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+        }
+    }
+    .overlay {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:rgba(0, 0, 0, 0.85);
+        background: linear-gradient(180deg, #62737D 1.85%, rgba(98, 115, 125, 0) 94.71%);
+        z-index:1;
+    }
+    .z-index-2 {
+        z-index: 2;
+    }
+}
