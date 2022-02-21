@@ -1,0 +1,19 @@
+@import './../common-imports';
+
+.mission-and-values{
+    header{
+        .h3{
+            max-width: 33.9rem;
+        }
+    }
+    p{
+        font-family: 'ARS Maquette';
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        @include media-breakpoint-up(lg) {
+            column-count: 2;
+        }
+    }
+}
