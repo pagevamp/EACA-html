@@ -1,3 +1,5 @@
+@import './../common-imports';
+
 .form-control{
     height: 6.2rem;
     border-radius: 0.8rem;
@@ -12,4 +14,19 @@
         font-family: "Poppins";
         color: $gray;
     }
+}
+
+.form-group{
+    margin-bottom: 3.2rem;
+}
+
+label{
+    font-weight: 600;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 1.5px;
+    color: $blue-gray;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
 }

@@ -1,0 +1,1 @@
+{"version":3,"sources":["text-leadspace.scss"],"names":[],"mappings":"AAAA,gBACI,mBAAa,CACb,sBAAgB","file":"../text-leadspace.min.css","sourcesContent":[".text-leadspace{\r\n    padding-top: 21.2rem;\r\n    padding-bottom: 17.2rem;\r\n}\r\n"]}
