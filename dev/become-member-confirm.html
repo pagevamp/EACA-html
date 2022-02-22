@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'EACA - Become Member Confirm'})
+    </head>
+    <body class="template-home">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                <!-- @@include('includes/header.html', {
+                    'headerSkin': ''
+                }) -->
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content bg-white-blue h-100">
+                        @@include('includes/offcanvas.html')
+                    </div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/text-leadspace.html',{
+                        'title':'Become a member',
+                        'subtitle':'Cool short tagline goes here'
+                    })
+                    @@include('includes/modules/section/image-copy-block.html',{
+                        'img':'trophy.jpg',
+                        'title':'Your information was sent sucessfully!',
+                        'para':'Shortly, you will receive an email with the next steps to finish your membership process.',
+                        'showHideAlumniCardText':'d-none'
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>
