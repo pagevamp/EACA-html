@@ -1,0 +1,39 @@
+@import "../common-imports";
+
+.image-copy-block {
+    .row {
+        border-radius: 2rem;
+    }
+    &__image {
+        figure {
+            height: 60.4rem;
+            @include media-breakpoint-up(lg) {
+                margin-left: -2.4rem;
+            }
+            @include media-breakpoint-up(md) {
+                margin-left: -1.3rem;
+                margin-right: -1.3rem;
+            }
+            img {
+                border-radius: 2rem;
+            }
+        }
+    }
+    &__text {
+        p {
+            color: $blue-gray;
+        }
+        &--courseCardText{
+            max-width: 39rem;
+        }
+    }
+
+    &__alternate {
+        .row {
+            flex-direction: row-reverse;
+        }
+        .image-copy-block__text--courseCardText {
+            display: none;
+        }
+    }
+}
