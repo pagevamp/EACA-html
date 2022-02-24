@@ -19,29 +19,33 @@
     }
 
     .thumb-img{
-        height: 50.8rem;
+        height: 100%;
         right: 0;
         top: 16.6rem;
+        padding-right: 3.2rem;
+        padding-left: 3.2rem;
+        @include media-breakpoint-up(lg) {
+            height: 50.8rem;
+            padding-right: 0;
+            padding-left: 0;
+        }
         @include media-breakpoint-up(xl) {
-            width: 38.6rem;
+            width: 50.8rem;
             position: absolute;
         }
         img{
             border-radius: 2rem;
-            width: 90%;
+            width: 100%;
             max-height: 50.8rem;
             object-fit: cover;
             @include media-breakpoint-up(lg) {
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
-                width: 60%;
                 margin-right: -10rem;
             }
             @include media-breakpoint-up(xl) {
                 margin-right: 0;
-                width: 102.9rem!important;
                 position: absolute;
-                width: 40%;
             }
         }
     }

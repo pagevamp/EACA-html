@@ -1,0 +1,55 @@
+.card-a06{
+    background: linear-gradient(180deg, #F4F8FF 0%, rgba(244, 248, 255, 0) 143.33%);
+    border-radius: 2rem;
+    &__name{
+        .h4{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 400;
+        }
+    }
+    &__quote{
+        .h4{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 400;
+        }
+    }
+    &__image{
+        gap:1.6rem;
+        figure{
+            border-radius: 50%;
+            overflow: hidden;
+            height: 4rem;
+            width: 4rem;
+            img{
+                overflow: hidden;
+                object-fit: cover;
+            }
+        }
+        &--placeholder,
+        &--alumni{
+            img{
+                object-fit: contain;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+        &--quoteName{
+            .h4{
+                font-family: 'Poppins';
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                font-weight: 500;
+                letter-spacing: 0.15rem;
+            }
+        }
+    }
+    &__email{
+        word-wrap: break-word;
+        a{
+            color: $super-blue-1;
+        }
+    }
+}
