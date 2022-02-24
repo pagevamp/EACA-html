@@ -1,0 +1,13 @@
+@import "./../common-imports";
+
+.donations{
+    &__block{
+        p{
+            color: $blue-gray;
+            font-weight: 300;
+            @include media-breakpoint-up(xl) {  
+                max-width:28.6rem;
+            }
+        }
+    }
+}
