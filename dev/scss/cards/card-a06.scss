@@ -54,3 +54,60 @@
         }
     }
 }
+
+
+.modal{
+    &-body{
+        padding-right: 3.6rem;
+        padding-left: 3.6rem;
+        @include media-breakpoint-up(lg) {
+            padding-right: 10.6rem;
+            padding-left: 10.6rem;
+        }
+        header{
+            p{
+                margin-bottom: 0px;
+                text-transform: uppercase;
+                &:first-child{
+                    color: $black;
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                }
+                &:last-child{
+                    color: #A4A4A4;
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                }
+            }
+            button{
+                top: 0;
+                right: -4rem;
+                @include media-breakpoint-up(lg) {
+                    right: -10rem;
+                }
+                i{
+                    font-size: 4rem;
+                }
+            }
+        }
+        &__content{
+            p{
+                font-family: 'ARS Maquette';
+                color: $blue-gray;
+                font-size: 1.7rem;
+                line-height: 2.8rem;
+                margin-bottom: 6.4rem;
+            }
+            figure{
+                max-width: 39.2rem;
+                // position: relative;
+                // padding-bottom: 56.22%;
+                // width: 39.2rem;
+                // img{
+                //     position: absolute;
+                //     object-fit: cover;
+                // }
+            }
+        }
+    }
+}
