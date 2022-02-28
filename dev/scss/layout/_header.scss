@@ -2,38 +2,89 @@ $leadspace-1-bg: #eaf5ff;
 
 .#{$global} {
     &-header {
-        background: $white;
-        height: 8rem;
+        height: 9.2rem!important;
         top: 0;
         transition: all 0.3s ease-in-out;
         transition-delay: 0.1s;
         @include media-breakpoint-up(xl) {
             height: 16rem;
         }
-        .primary-links{
-            @include media-breakpoint-up(lg) {
-                padding-right: 3.8rem;
+        border-bottom: 1px solid $white;
+        .navbar{
+            &-brand{
+                img{
+                    width: 3.6rem;
+                }
+                padding-right: 3rem;
+                margin-right: 0;
+                position: relative;
+                
+                // @include media-breakpoint-up(md) {
+                //     padding-right: 3rem;
+                // }
+                @include media-breakpoint-up(xl) {
+                    padding-right: 4.6rem;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    height: 90px;
+                    width: 1px;
+                    background-color: $white;
+                }
+                p{
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
             }
-            &::after{
-                position: absolute;
-                right: 0;
-                content: '';
-                width: .2rem;
-                height: 4.7rem;
-                background-color: #dadada;
-                top: -.5rem;
-                @media (max-width: 1200px) {
-                    display: none !important;
+        }
+        .primary-links{
+            ul{
+                li{
+                    a{
+                        color: $white;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
                 }
             }
         }
 
         .secondary-links{
-            @include media-breakpoint-up(xl) {
-                padding-left: 3.5rem;
+            position: relative;
+            
+            @include media-breakpoint-up(md) {
+                padding-left: 2.6rem;
             }
-            @media (max-width: 1200px) {
-                display: none !important;
+            @include media-breakpoint-up(lg) {
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: -100%;
+                    left: 0;
+                    height: 90px;
+                    width: 1px;
+                    background-color: $white;
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                padding-left: 4.6rem;
+            }
+
+            ul{
+                li{
+                    padding: 0px;
+                    a{
+                        color: $white;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+                }
             }
         }
         &--dark{
@@ -48,18 +99,36 @@ $leadspace-1-bg: #eaf5ff;
 }
 
 .hamburger-wrap {
-    @media (min-width: 1200px) {
+    @include media-breakpoint-up(lg) {
         display: none !important;
+    }
+    position: relative;
+    padding-left: 3rem;
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        height: 90px;
+        width: 1px;
+        background-color: $white;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &::before{
+            display: none;
+        }
     }
 }
 
 .navbar-brand {
-    gap: 2.5rem;
+    gap: 1.6rem;
+    padding-top: 0;
+    padding-bottom: 0;
     @media (min-width: 1200px) {
         flex-grow: 0 !important;
     }
     p{
-        letter-spacing: 10px;
+        letter-spacing: 1.5px;
     }
 }
 
