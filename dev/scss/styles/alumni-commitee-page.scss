@@ -1,0 +1,51 @@
+@import './../common-imports';
+
+
+.template-alumni-commitee{
+    .theme-header{
+        border-color: $gray;
+            .primary-links,.secondary-links{
+                ul{
+                    li{
+                        a{
+                            color: $blue-gray;
+                        }
+                    }
+                }
+            }
+            .navbar-brand{
+                .logo-dark{
+                    display: inline-block;
+                }
+                .logo-light{
+                    display: none;
+                }
+                p{
+                    color: $blue-gray!important;
+                }
+                &::after{
+                    background-color: $gray;
+                }
+            }
+            .ehs_site{
+                &::before{
+                    background-color: $gray!important;
+                }
+                
+                &::after{
+                    background-color: $gray!important;
+                }
+            }
+            .hamburger{
+                &-inner{
+                    background-color: $gray!important;
+                    &::before{
+                        background-color: $gray!important;
+                    }
+                    &::after{
+                        background-color: $gray!important;
+                    }
+                }
+            }
+    }
+}
