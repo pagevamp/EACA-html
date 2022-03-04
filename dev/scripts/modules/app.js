@@ -61,7 +61,7 @@ class global {
 
     stickyHeader() {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() > 50) {
                 $('.theme-header').addClass('header-small');
             } else {
                 $('.theme-header').removeClass('header-small');
