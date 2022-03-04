@@ -29,11 +29,11 @@
         }
 
         .hamburger-inner {
-            background-color: $primary;
+            background-color: $white;
 
             &::before,
             &::after {
-                background-color: $primary;
+                background-color: $white;
             }
         }
     }
@@ -43,7 +43,7 @@
     }
 
     &-inner {
-        background-color: $primary;
+        background-color: $white;
         height:.2rem;
         top: 50%;
         transform: translateY(-50%);
@@ -55,7 +55,7 @@
         &::before,
         &::after {
             content: "";
-            background-color: $primary;
+            background-color: $white;
             height:.2rem;
             @extend .position-absolute, .position-r-0;
             display: block;
