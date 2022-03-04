@@ -12,6 +12,12 @@ $leadspace-1-bg: #eaf5ff;
         border-bottom: 1px solid $white;
         .navbar{
             &-brand{
+                .logo-dark{
+                    display: none;
+                }
+                .logo-light{
+                    display: inline-block;
+                }
                 img{
                     width: 3.6rem;
                 }
@@ -131,14 +137,105 @@ $leadspace-1-bg: #eaf5ff;
             }
         }
         &--dark{
-            background-color: $leadspace-1-bg!important;
+            border-color: $gray;
+            .primary-links,.secondary-links{
+                ul{
+                    li{
+                        a{
+                            color: $blue-gray;
+                        }
+                    }
+                }
+            }
+            .navbar-brand{
+                .logo-dark{
+                    display: inline-block;
+                }
+                .logo-light{
+                    display: none;
+                }
+                p{
+                    color: $blue-gray!important;
+                }
+                &::after{
+                    background-color: $gray;
+                }
+            }
+            .ehs_site{
+                &::before{
+                    background-color: $gray!important;
+                }
+                
+                &::after{
+                    background-color: $gray!important;
+                }
+            }
+            .hamburger{
+                &-inner{
+                    background-color: $gray!important;
+                    &::before{
+                        background-color: $gray!important;
+                    }
+                    &::after{
+                        background-color: $gray!important;
+                    }
+                }
+            }
         }
     }
 }
 
 .header-small{
     height: 10rem;
-    background-color:$leadspace-1-bg!important;
+    background-color:$white!important;
+    border-color: $gray;
+    .primary-links,.secondary-links{
+        ul{
+            li{
+                a{
+                    color: $blue-gray;
+                }
+            }
+        }
+    }
+    .navbar-brand{
+        .logo-dark{
+            display: inline-block;
+        }
+        .logo-light{
+            display: none;
+        }
+        p{
+            color: $blue-gray!important;
+        }
+        &::after{
+            background-color: $gray;
+        }
+    }
+    .ehs_site{
+        &::before{
+            background-color: $gray!important;
+        }
+        
+        &::after{
+            background-color: $gray!important;
+        }
+    }
+    .hamburger{
+        &-inner{
+            background-color: $gray!important;
+            &::before{
+                background-color: $gray!important;
+            }
+            &::after{
+                background-color: $gray!important;
+            }
+        }
+    }
+}
+
+.position-sticky{
+    
 }
 
 .hamburger-wrap {
