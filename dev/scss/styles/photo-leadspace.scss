@@ -1,11 +1,25 @@
-@import "../common-imports";
+  @import "../common-imports";
 
 
 $blue-gray: #667680;
 
 .photo-leadspace{
     &.feature-callout{
-        height: 40rem;
+        margin-top: -9.2rem;
+        padding-top: 19.6rem;
+        padding-bottom: 10.4rem;
+        @include media-breakpoint-up(md) {
+            padding-top: 18.6rem;
+            padding-bottom: 9.4rem;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-top: 20rem;
+            padding-bottom: 13rem;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-top: 20rem;
+            padding-bottom: 10.8rem;
+        }
     }
     figure{
         img{
