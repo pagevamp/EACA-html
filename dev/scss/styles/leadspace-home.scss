@@ -2,14 +2,8 @@
 @import "../global/path";
 
 .leadspace-home{
-    &.feature-callout{
-        height: 68rem;
-        @include media-breakpoint-up(md) {        
-            height: 60rem;
-        }
-        @include media-breakpoint-up(lg) {        
-            height: 80rem;
-        }
+    &.feature-callout{     
+        height: 80rem;
     }
     figure{
         img{
@@ -19,11 +13,29 @@
     header{
         .h2{
             letter-spacing: -2px;
+            max-width: 30rem;
+            margin: 0 auto;
+            @include media-breakpoint-up(md) { 
+                max-width: 40.4rem;
+            }
+            @include media-breakpoint-up(lg) { 
+                max-width: 51.4rem;
+            }
+            @include media-breakpoint-up(xl) { 
+                max-width: 100%;
+            }
         } 
         p{
             font-size:1.4rem;
             line-height: 2.4rem;
             font-weight: 600;
+            letter-spacing: 1.5px;
+            width: 100vw;
+            margin-left: -2.7rem;
+            @include media-breakpoint-up(md) { 
+                width: 100%;
+                margin-left: 0;
+            }
         }
     }
     .overlay {
