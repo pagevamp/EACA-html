@@ -3,17 +3,17 @@
 .text-leadspace{
     margin-top: -9.2rem;
     padding-top: 19.4rem;
-    padding-bottom: 15.4rem;
+    padding-bottom: 10.2rem;
     @include media-breakpoint-up(md) {
         padding-top: 18.4rem;
-        padding-bottom: 14.4rem;
+        padding-bottom: 92rem;
     }
     @include media-breakpoint-up(lg) {
         padding-top: 19.9rem;
-        padding-bottom: 15.9rem;
+        padding-bottom: 10.7rem;
     }
     @include media-breakpoint-up(xl) {
         padding-top: 21.2rem;
-        padding-bottom: 17.2rem;
+        padding-bottom: 12rem;
     }
 }
