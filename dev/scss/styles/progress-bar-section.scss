@@ -1,0 +1,100 @@
+@import "./../common-imports";
+
+.progress-bar-section{
+    &__image{
+        position: relative;
+        margin-bottom: 12.8rem;
+        figure{
+            border-radius: 2rem;
+            position: relative;
+            padding-bottom: 136.31%;
+            @include media-breakpoint-up(md) {
+                padding-bottom: 115.74%;
+            }
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 70%;
+            }
+            @include media-breakpoint-up(xl) {
+                padding-bottom: 40%;
+            }
+            img{
+                position: absolute;
+                object-fit: cover;
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, #62737D 1.85%, rgba(98, 115, 125, 0) 94.71%);
+            }
+        }
+        &--text{
+            position: absolute;
+            bottom: 4rem;
+            left: 0;
+        }
+    }
+    &__bar{
+        .progress{
+            height: 10px;
+            background: $super-blue-4;
+            height: 1.4rem;
+            border-radius: 4rem;
+            box-shadow: none;
+            overflow: visible;
+            position: relative;
+        }
+        .progress .progress-bar{
+            background: #fff;
+            border-radius: 0;
+            position: relative;
+            -webkit-animation: animate-positive 2s;
+            animation: animate-positive 2s;
+        }
+        .progress .progress-bar{
+            width: 100%;
+            background: linear-gradient(90deg, #0C55A3 0%, #0075FF 43.87%);;
+            height: 14px;
+            border-radius: 40px;
+        }
+        .progress .progress-bar:before{
+            content: "";
+            position: absolute;
+            top: -16px;
+            right: 20px;
+            border: 8px solid transparent;
+            border-color: transparent transparent $super-blue-1 transparent;
+            height: 0;
+            width: 0;
+        }
+        .progress .progress-bar:after{
+            content: "";
+            border-right: 14px solid $super-blue-2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(90deg, #0C55A3 0%, #0075FF 43.87%);;
+            height: 14px;
+            width: 14px;
+            border-radius: 4rem;
+        }
+        .progress .progress-value p{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 500;
+            color: $super-blue-1;
+            position: absolute;
+            top: -64px;
+            right: -5px;
+            span{
+                color: #A4A4A4;
+                display: block;
+                text-align: right;
+            }
+        }
+        
+    }
+}
