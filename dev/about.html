@@ -19,12 +19,26 @@
                     @@include('./includes/modules/above-the-fold/photo-leadspace.html',{
                         'title':'About'
                     })
-                    @@include('./includes/modules/section/school-history.html')
+                    @@include('./includes/modules/section/school-history.html',{
+                        'para':"Coming down the main street of Middletown a little over sixty years ago, one would have been met with the sight of quaint buildings staring curiously at the heap of cement, steel, and upturned earth that would soon become Eastern High School. Founded in 1950, Eastern quickly grew from its 66 classrooms and student population of 1,500. Today Eastern ranks in the top five best high schools in Jefferson County with its 2,200 students and 88 classrooms. Over the years, Eastern has developed a strong academic track combined with a plethora of technology classes and partnerships with companies such as IBM, Dell and Microsoft. In addition, Eastern's athletic teams have earned state recognition, with the Varsity Basketball Team ranking first in the state during the 2010-2011 season. Today, we continue to grow as not only a school, but as a community.",
+                        'title':'School history'
+                    })
                     @@include('./includes/modules/section/mission-and-values.html',{
                         'title':'Mission and Values',
                         'para':'At augue eget arcu dictum. Nunc vel risus commodo viverra maecenas accumsan lacus. Semper quis lectus nulla at volutpat diam ut. Convallis posuere morbi leo urna molestie. Cursus eget nunc scelerisque viverra. At risus viverra adipiscing at in. Enim tortor at auctor urna nunc. At augue eget arcu dictum. Nunc vel risus commodo viverra maecenas accumsan lacus. Semper quis lectus nulla at volutpat diam ut. Convallis posuere morbi leo urna molestie. Cursus eget nunc scelerisque viverra. At risus viverra adipiscing at in. Enim tortor at auctor urna nunc.'
                     })
-                    @@include('./includes/modules/section/student-of-the-month.html')
+                    @@include('includes/modules/section/image-copy-block.html',{
+                        'img':'trophy.jpg',
+                        'title':'Your information was sent sucessfully!',
+                        'para':'Shortly, you will receive an email with the next steps to finish your membership process.',
+                        'showHideAlumniCardText':'',
+                        'showHideCourseCardText':'d-none',
+                        'showHideSectionTitle':'',
+                        'sectionTitle':'Notable Alumni',
+                        'quote':'Nate Morris is the chairman and founder of Lexington, Kentucky-based Morris Industries, and its signature asset, Rubicon, a widely acclaimed software company focused on waste and recycling. Morris, a ninth-generation Kentuckian born in Lexington and raised by a single mother in a union household, attended public schools and was the first Kentuckian to be named to Fortune Magazines 4… ',
+                        'name':'JULIE WENTWORTH – 2019',
+                        'faculty':'BEST IN MATHEMATICS'
+                    })
                 </main>
             </div>
             @@include('includes/footer.html')

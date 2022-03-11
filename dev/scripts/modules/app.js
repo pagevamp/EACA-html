@@ -86,6 +86,7 @@ class global {
             },0);        
         });
     }
+    
     searchClear(){
         $('.has-clear input[type="text"]').on('change keyup', function(){
             var $this = $(this);
