@@ -28,12 +28,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-play {
+.icon-mic {
   &:before {
-    content: $icon-play; 
+    content: $icon-mic; 
   }
 }
-
+.icon-twitter-normal {
+  &:before {
+    content: $icon-twitter-normal; 
+  }
+}
 .icon-chevron-down {
   &:before {
     content: $icon-chevron-down; 
@@ -52,11 +56,6 @@
 .icon-chevron-top {
   &:before {
     content: $icon-chevron-top; 
-  }
-}
-.icon-twitter {
-  &:before {
-    content: $icon-twitter; 
   }
 }
 .icon-facebook-normal {
@@ -89,9 +88,9 @@
     content: $icon-youtube; 
   }
 }
-.icon-hamburger {
+.icon-play {
   &:before {
-    content: $icon-hamburger; 
+    content: $icon-play; 
   }
 }
 .icon-left {
@@ -102,6 +101,16 @@
 .icon-right {
   &:before {
     content: $icon-right; 
+  }
+}
+.icon-up {
+  &:before {
+    content: $icon-up; 
+  }
+}
+.icon-down {
+  &:before {
+    content: $icon-down; 
   }
 }
 .icon-search {

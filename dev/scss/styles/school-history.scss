@@ -1,7 +1,19 @@
+@import './../common-imports';
+
 .school-history{
     header{
         h3{
             max-width: 22rem;
+        }
+    }
+    p{
+        font-family: 'ARS Maquette';
+        color: $blue-gray;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2.8rem;
+        @include media-breakpoint-up(lg) {
+            column-count: 2;
         }
     }
 }
