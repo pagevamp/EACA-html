@@ -182,8 +182,15 @@ $leadspace-1-bg: #eaf5ff;
                 }
             }
         }
+        &--is-open{
+            background-color: $blue-gray!important;
+        }
     }
 }
+
+// .theme-header--is-open{
+//     background-color: $blue-gray!important;
+// }
 
 .header-small{
     height: 10rem;
@@ -274,48 +281,99 @@ $leadspace-1-bg: #eaf5ff;
     .theme-header{
         border-color: $gray;
         background-color: $white!important;
+        .primary-links,.secondary-links{
+            ul{
+                li{
+                    a{
+                        color: $blue-gray;
+                    }
+                }
+            }
+        }
+        .navbar-brand{
+            .logo-dark{
+                display: inline-block;
+            }
+            .logo-light{
+                display: none;
+            }
+            p{
+                color: $blue-gray!important;
+            }
+            &::after{
+                background-color: $gray;
+            }
+        }
+        .ehs_site{
+            &::before{
+                background-color: $gray!important;
+            }
+            
+            &::after{
+                background-color: $gray!important;
+            }
+        }
+        .hamburger{
+            &-inner{
+                background-color: $gray!important;
+                &::before{
+                    background-color: $gray!important;
+                }
+                &::after{
+                    background-color: $gray!important;
+                }
+            }
+        }
+        &--is-open{
+            background-color: $blue-gray!important;
+            border-color: $white;
             .primary-links,.secondary-links{
                 ul{
                     li{
                         a{
-                            color: $blue-gray;
+                            color: $white;
                         }
                     }
                 }
             }
             .navbar-brand{
                 .logo-dark{
-                    display: inline-block;
+                    display: none;
                 }
                 .logo-light{
-                    display: none;
+                    display: inline-block;
                 }
                 p{
                     color: $blue-gray!important;
                 }
                 &::after{
-                    background-color: $gray;
+                    background-color: $white;
                 }
             }
             .ehs_site{
                 &::before{
-                    background-color: $gray!important;
+                    background-color: $white!important;
                 }
                 
                 &::after{
-                    background-color: $gray!important;
+                    background-color: $white!important;
                 }
             }
             .hamburger{
                 &-inner{
-                    background-color: $gray!important;
+                    background-color: $white!important;
                     &::before{
-                        background-color: $gray!important;
+                        background-color: $white!important;
                     }
                     &::after{
-                        background-color: $gray!important;
+                        background-color: $white!important;
                     }
                 }
             }
+        }
     }
+    // .theme-header--is-open{
+    //     background-color: $gray-blue;
+    //     color: $white;
+    // }
 }
