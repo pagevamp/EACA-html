@@ -1,1 +1,1 @@
-{"version":3,"sources":["donatenow.scss"],"names":[],"mappings":"AACA,sBAGY,iBAAW","file":"../donatenow.min.css","sourcesContent":["\r\n.donatenow{\r\n    header{\r\n        .h3{\r\n            max-width: 51.4rem;\r\n        }\r\n    }\r\n}\r\n"]}
+{"version":3,"sources":["donatenow.scss"],"names":[],"mappings":"AACA,WACI,mBAAS,CADb,sBAIY,iBAAW","file":"../donatenow.min.css","sourcesContent":["\r\n.donatenow{\r\n    padding: 7rem 0 9rem;\r\n    header{\r\n        .h3{\r\n            max-width: 51.4rem;\r\n        }\r\n    }\r\n}\r\n"]}
