@@ -55,6 +55,9 @@ $leadspace-1-bg: #eaf5ff;
                         font-size: 1.4rem;
                         line-height: 2rem;
                         padding: 0;
+                        &:hover{
+                            color: $super-blue-3;
+                        }
                     }
 
                     .dropdown-menu{
