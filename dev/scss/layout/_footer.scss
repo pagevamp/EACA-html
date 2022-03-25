@@ -13,6 +13,9 @@
                         right: -7px;
                         top: 6px;
                     }
+                    &:hover{
+                        color: $white-blue;
+                    }
                     &:last-child{
                         &::after{
                             display: none;
