@@ -1,6 +1,6 @@
 @import "../common-imports";
 
-
+ 
 .upcoming-events{
     &__title{
         .h3{
@@ -12,6 +12,9 @@
                 display: block;
             }
         }
+    }
+    &__wrapper{
+        gap: 20px;
     }
     &__img{
         border-radius: 2rem;
