@@ -12,6 +12,7 @@ class global {
         this.scrollspy();
         this.searchClear();
         this.selectOption();
+        this.progressBar();
     }
 
     // Hamburger Menu
@@ -151,6 +152,19 @@ class global {
         
         });
     }
+
+    progressBar(){
+        var progressBar = document.getElementById('progress-bar');
+        var divWidth = progressBar.clientWidth;
+        var progressBarBefore = window.getComputedStyle(progressBar,"::before");
+        console.log(progressBarBefore.right);
+        
+        if(divWidth == 0){
+            progressBarBefore.setProperty('left','0px')
+            console.log(divWidth);
+        }
+    }
+
     events() {}
 }
 
