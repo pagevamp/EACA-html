@@ -167,8 +167,8 @@ class global {
         var progressPercentage = Math.ceil(((progressBarWidth/progressWidth) * 100));
 
         var deviceWidth = window.innerWidth;
-        console.log("Device Width " + deviceWidth);
-        console.log("Progress % " + progressPercentage);
+        // console.log("Device Width " + deviceWidth);
+        // console.log("Progress % " + progressPercentage);
 
         var statDetail = document.getElementById('statDetail')
 

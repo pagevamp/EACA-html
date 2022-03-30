@@ -71,14 +71,6 @@
             width: 0;
         }
 
-        // .progress .progress-bar.groundZero:before{
-        //     right: 0px;
-        // }
-
-        // .progress .progress-bar.mobileDevice:before{
-        //     right:0;
-        // }
-
         .progress .progress-bar.mobileDevice:before,
         .progress .progress-bar.mobileDevice:after{
             right: 0;
@@ -92,9 +84,6 @@
         .progress-value p.zeroValue{
             right: auto!important;
         }
-        // .progress-value p.groundZero{
-        //     right: auto!important;
-        // }
 
         .progress .progress-bar:after{
             content: "";
