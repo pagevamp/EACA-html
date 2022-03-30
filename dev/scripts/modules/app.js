@@ -154,14 +154,34 @@ class global {
     }
 
     progressBar(){
-        var progressBar = document.getElementById('progress-bar');
-        var divWidth = progressBar.clientWidth;
-        var progressBarBefore = window.getComputedStyle(progressBar,"::before");
-        console.log(progressBarBefore.right);
+
+        //Get the width of the entire progress bar
+        var progress = document.getElementById('progress');
+        var progressWidth = progress.clientWidth;
         
-        if(divWidth == 0){
-            progressBarBefore.setProperty('left','0px')
-            console.log(divWidth);
+        //Get the width of the progress
+        var progressBar = document.getElementById('progress-bar');
+        var progressBarWidth = progressBar.clientWidth;
+
+        //Calculate the progress in percentage
+        var progressPercentage = Math.ceil(((progressBarWidth/progressWidth) * 100));
+
+        var deviceWidth = window.innerWidth;
+        console.log("Device Width " + deviceWidth);
+        console.log("Progress % " + progressPercentage);
+
+        var statDetail = document.getElementById('statDetail')
+
+        if((progressPercentage <= 50 && deviceWidth <= 400 ) || progressPercentage <= 10){
+            statDetail.style.right = 'auto';
+        }
+
+        if((progressPercentage <= 20 && deviceWidth <= 400) || progressPercentage <= 10  ){
+            progressBar.classList.add('mobileDevice');
+        }
+
+        if(progressPercentage == 0 ){
+            progressBar.classList.add('zeroValue');
         }
     }
 

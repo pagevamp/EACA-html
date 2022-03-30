@@ -69,8 +69,33 @@
             border-color: transparent transparent $super-blue-1 transparent;
             height: 0;
             width: 0;
-            
         }
+
+        // .progress .progress-bar.groundZero:before{
+        //     right: 0px;
+        // }
+
+        // .progress .progress-bar.mobileDevice:before{
+        //     right:0;
+        // }
+
+        .progress .progress-bar.mobileDevice:before,
+        .progress .progress-bar.mobileDevice:after{
+            right: 0;
+        }
+
+        .progress .progress-bar.zeroValue:before,
+        .progress .progress-bar.zeroValue:after{
+            right: auto;
+        }
+
+        .progress-value p.zeroValue{
+            right: auto!important;
+        }
+        // .progress-value p.groundZero{
+        //     right: auto!important;
+        // }
+
         .progress .progress-bar:after{
             content: "";
             border-right: 1.4rem solid $super-blue-2;
@@ -82,7 +107,7 @@
             width: 1.4rem;
             border-radius: 4rem;
             
-        }
+        } 
         .progress .progress-value p{
             font-size: 1.4rem;
             line-height: 2.4rem;
