@@ -3,13 +3,18 @@
  
 .upcoming-events{
     &__title{
+        @include media-breakpoint-up(xl) {  
+            position: absolute;
+        }
         .h3{
-            writing-mode: vertical-rl;
-            transform: rotate(-360deg);
-            letter-spacing: 0.4rem;
-            display: none;
-            @include media-breakpoint-up(xl) {        
-                display: block;
+            padding-left: 3.2rem;
+            padding-right: 3.2rem;
+            @include media-breakpoint-up(xl) {  
+                writing-mode: vertical-rl;
+                transform: rotate(-360deg);
+                letter-spacing: 0.4rem;
+                padding-left: 0rem;
+                padding-right: 0rem;
             }
         }
     }
@@ -19,6 +24,10 @@
     &__img{
         border-radius: 2rem;
         overflow: hidden;
+        @include media-breakpoint-up(xl) {        
+            flex-grow: 1;
+            flex-basis: 0;
+        }
         &::after{
             position: absolute;
             right: 0;
