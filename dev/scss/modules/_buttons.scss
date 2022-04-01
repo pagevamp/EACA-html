@@ -29,6 +29,10 @@
     &-default{
         background-color: $blue-gray;
         color: $white;
+        &:hover{
+            background-color: $black;
+            color: $white;
+        }
     }
 
     &-white{

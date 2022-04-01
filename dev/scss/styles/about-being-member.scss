@@ -17,6 +17,10 @@
         }
     }
     &__text{
+        .h3{
+            letter-spacing: -0.03em;
+            max-width: 22.3rem;
+        }
         p{
             color:$blue-gray;
             font-weight: 300;
